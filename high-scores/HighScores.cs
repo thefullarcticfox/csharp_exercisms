@@ -1,10 +1,9 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
 public class HighScores
 {
-    private List<int>   _scoreList;
+    private readonly List<int>  _scoreList;
 
     public HighScores(List<int> list) => _scoreList = list;
 
