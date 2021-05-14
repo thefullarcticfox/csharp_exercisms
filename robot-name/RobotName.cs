@@ -13,7 +13,7 @@ public class Robot
         while (_prevNames.Contains(res)) {
             res = "";
             while (res.Length < 2)
-                res += Convert.ToChar('A' + _rng.Next('Z' - 'A'));
+                res += Convert.ToChar('A' + _rng.Next('Z' - 'A' + 1));
             while (res.Length < 5)
                 res += _rng.Next(10);
         }
